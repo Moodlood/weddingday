@@ -1,0 +1,287 @@
+/* ===========================
+   FONT
+=========================== */
+
+@font-face {
+    font-family: "Mongmong";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2301@1.1/Ownglyph_Mongmongday.woff") format("woff");
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#fffefc;
+
+    font-family:"Mongmong", sans-serif;
+
+    color:#5b5149;
+
+}
+
+
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery{
+
+    width:100%;
+
+    max-width:430px;
+
+    margin:auto;
+
+    padding:60px 18px 80px;
+
+}
+
+.guide{
+
+    text-align:center;
+
+    font-size:17px;
+
+    margin-bottom:38px;
+
+    color:#5c514a;
+
+    line-height:1.6;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:14px;
+
+}
+
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.gallery-item{
+
+    aspect-ratio:2/3;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    background:#f4f2ef;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.3s;
+
+}
+
+.gallery-item img:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+#moreBtn{
+
+    display:block;
+
+    margin:60px auto 0;
+
+    width:74px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#55514d;
+
+    color:white;
+
+    font-size:16px;
+
+    font-family:"Mongmong";
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+#moreBtn:hover{
+
+    background:#3f3a36;
+
+}
+
+
+/* ===========================
+   VIEWER
+=========================== */
+
+.viewer{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.93);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:9999;
+
+}
+
+.viewer.show{
+
+    display:flex;
+
+}
+
+#viewerImg{
+
+    max-width:92vw;
+
+    max-height:82vh;
+
+    object-fit:contain;
+
+}
+
+
+/* ===========================
+   CLOSE
+=========================== */
+
+#closeBtn{
+
+    position:absolute;
+
+    top:24px;
+
+    right:24px;
+
+    color:white;
+
+    font-size:42px;
+
+    cursor:pointer;
+
+}
+
+
+/* ===========================
+   PREV NEXT
+=========================== */
+
+#prevBtn,
+#nextBtn{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    border:none;
+
+    background:none;
+
+    color:white;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    padding:18px;
+
+}
+
+#prevBtn{
+
+    left:10px;
+
+}
+
+#nextBtn{
+
+    right:10px;
+
+}
+
+
+/* ===========================
+   COUNT
+=========================== */
+
+.count{
+
+    color:white;
+
+    font-size:18px;
+
+    margin-top:28px;
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:430px){
+
+.gallery{
+
+padding:55px 16px 70px;
+
+}
+
+.guide{
+
+font-size:16px;
+
+}
+
+.gallery-grid{
+
+gap:10px;
+
+}
+
+}
