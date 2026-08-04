@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Wedding Gallery</title>
+
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <!-- 온글잎 몽몽데이즈 -->
+    <style>
+        @font-face {
+            font-family: "Mongmong";
+            src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2301@1.1/Ownglyph_Mongmongday.woff") format("woff");
+        }
+    </style>
+
+</head>
+
+<body>
+
+<section class="gallery">
+
+    <p class="guide">
+        사진을 클릭하시면 전체 화면 보기가 가능합니다
+    </p>
+
+    <div id="galleryGrid" class="gallery-grid">
+    </div>
+
+    <button id="moreBtn">
+        더보기
+    </button>
+
+</section>
+
+
+
+<!-- 전체보기 -->
+
+<div id="viewer" class="viewer">
+
+    <span id="closeBtn">&times;</span>
+
+    <button id="prevBtn">&#10094;</button>
+
+    <img id="viewerImg">
+
+    <button id="nextBtn">&#10095;</button>
+
+    <div class="count">
+        <span id="current">1</span>
+        /
+        <span id="total">29</span>
+    </div>
+
+</div>
+
+<script src="js/gallery.js"></script>
+
+</body>
+</html>gallery.html
